@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header"> 
+        <a href="a" class="logo"><span>Ash</span>Riel</a>
+        <nav class="navbar">
+            <a href="#home-content">Home</a>
+            <a href="#about-section">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Experience</a>
+        </nav>
+        <a href="#contact-section" class="contact">Contact Me</a>
+    </header>
+
+    <section class="home" id="home-content">
+        <div class="home-content">
+            <h3>Hi,</h3>
+            <h1>I'm <span> Ashriel<br></span> an IT student</h1>
+            <p>I am constantly exploring new tools, programming languages,
+                and methodologies to enhance my skills. With a strong interest 
+                in software development, networking, and system analysis, I’m 
+                driven to understand how technology shapes the world and how 
+                I can contribute to building innovative solutions. 
+                This portfolio showcases my journey, projects, and growing 
+                expertise as I continue to learn and develop in the ever-evolving 
+                field of information technology.</p>
+            <div class="btn-box">
+                <button id="hireMeButton" class="btn-1">Hire Me</button>
+                <button id="experienceButton" class="btn-2">Experience</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="A.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about-section">
+        <div class="about-img">
+            <img src="A.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Future <span> Cybersecurity</span></h3>
+            <p>As an aspiring cybersecurity professional, 
+                I am committed to safeguarding digital landscapes 
+                by identifying and mitigating security threats. 
+                My journey in IT has equipped me with a solid 
+                foundation in system analysis and a keen understanding 
+                of security principles. Driven by a passion for 
+                protecting sensitive information and preventing 
+                cyberattacks, I am dedicated to staying abreast 
+                of the latest threats and advancements in cybersecurity. 
+                With a focus on continuous learning and hands-on experience, 
+                I aim to develop and implement robust security measures 
+                that fortify systems against vulnerabilities and ensure 
+                the integrity and confidentiality of critical data.</p>
+            <a href="#about-section" class="btn-2">Experience</a>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact-section">
+        <h2 class="contact-me">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">@ 2024 Ashriel | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('hireMeButton').addEventListener('click', function() {
+            document.getElementById('contact-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('experienceButton').addEventListener('click', function() {
+            document.getElementById('about-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
