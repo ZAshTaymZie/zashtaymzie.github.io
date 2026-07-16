@@ -110,3 +110,14 @@ toTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smoo
 // Year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Contact form submission feedback
+const contactForm = document.querySelector('.contact-form');
+
+contactForm?.addEventListener('submit', () => {
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+
+  if (submitButton) {
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+  }
+});

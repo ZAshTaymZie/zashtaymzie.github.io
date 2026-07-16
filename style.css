@@ -402,3 +402,71 @@ input:focus, textarea:focus {
 @media (max-width: 768px) {
   .cert-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Neon Red Glow Effects ===== */
+
+.card,
+.cert-card,
+.stat,
+.contact-form,
+.img-box,
+.about-img img,
+input,
+textarea {
+  border-color: rgba(255, 30, 50, 0.65);
+  box-shadow:
+    0 0 5px rgba(255, 30, 50, 0.35),
+    0 0 15px rgba(255, 30, 50, 0.15);
+}
+
+/* Neon hover effect for cards */
+.card:hover,
+.cert-card:hover,
+.stat:hover {
+  border-color: #ff1e32;
+  box-shadow:
+    0 0 8px rgba(255, 30, 50, 0.8),
+    0 0 20px rgba(255, 30, 50, 0.55),
+    0 0 40px rgba(255, 30, 50, 0.25);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+/* Hover effect for the profile image */
+.img-box:hover {
+  border-color: #ff1e32;
+  box-shadow:
+    0 0 10px rgba(255, 30, 50, 0.9),
+    0 0 25px rgba(255, 30, 50, 0.6),
+    0 0 50px rgba(255, 30, 50, 0.3);
+}
+
+/* Input glow when selected */
+input:focus,
+textarea:focus {
+  border-color: #ff1e32;
+  box-shadow:
+    0 0 8px rgba(255, 30, 50, 0.8),
+    0 0 18px rgba(255, 30, 50, 0.35);
+}
+
+/* Contact form hover */
+.contact-form:hover {
+  border-color: rgba(255, 30, 50, 0.9);
+  box-shadow:
+    0 0 10px rgba(255, 30, 50, 0.45),
+    0 0 30px rgba(255, 30, 50, 0.2);
+}
+
+/* Buttons glow on hover */
+.btn-primary:hover {
+  box-shadow:
+    0 0 8px rgba(255, 30, 50, 0.8),
+    0 0 20px rgba(255, 30, 50, 0.5);
+}
+
+.btn-ghost:hover {
+  border-color: #ff1e32;
+  box-shadow:
+    0 0 8px rgba(255, 30, 50, 0.7),
+    0 0 18px rgba(255, 30, 50, 0.3);
+}
